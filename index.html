@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+  <div class="flex justify-around mt-3">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.G_njanbXycQWkfsmAmyvVQAAAA&pid=Api&P=0&h=180" alt="react logo" class="h-10">
+  <div class="flex justify-center space-x-20">
+    <div>Home</div>
+  <div>About Me</div>
+  <div>Contact Me</div>
+</div>
+  <button onclick="alertTwo()" class="hover:bg-red-300 bg-red-600 rounded-sm text-white border-none p-1">Hire Me</button>
+</div>
+ 
+<div class="main flex items-center">
+  <div class="w-1/2">
+    <h2 class="font-bold mb-2 ml-7 text-4xl">I am <span class="text-red-500">Shrivrat</span></h2>
+    <h2 class="font-bold mb-3 ml-7 text-4xl">I'm a Web Developer</h2>
+    <p class="ml-7 max-w-md mx-auto italic">Welcome to my Portfolio page where you can know about me and can see my work</p>
+    <button onclick="showAlert()" class="mt-4 ml-7 hover:bg-red-300 bg-red-600 rounded-md text-white border-none p-3">Download CV</button>
+    <div class="flex mt-2 ml-3">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.VArJwZMxFN-qHnD8Xue-QAHaHa&pid=Api&P=0&h=180" onclick="linked()" class="h-7 m-2 mr-3" alt="Linkedin Logo">
+    <img src="https://tse2.mm.bing.net/th?id=OIP.biG9UdrkNGTbvX1YvOvY4AAAAA&pid=Api&P=0&h=180" onclick="x()" class="h-7 m-2 rounded-full" alt="X logo">
+    <img src="https://tse4.mm.bing.net/th?id=OIP.8SVgggxQcO5L6Dw_61ac4QHaEK&pid=Api&P=0&h=180" onclick="github()" alt="github icon"  class="h-7 m-2">
+    </div>
+  </div>
+
+  <div class="w-1/2">
+    <img src="./pic .jpg" alt="Shrivrat pic" class="mt-20 ml-10 rounded-lg h-80">
+  </div>
+</div>
+
+<script>
+  
+  function showAlert() {
+    alert("Abhi to nhi bnai CV");
+  }
+
+  function alertTwo() {
+    alert("Itni jaldi kya pehle graduate to ho jau");
+  }
+
+  function github() {
+    let github = "https://github.com/shrivrat0809"
+    window.open(github,"_blank");
+  }
+
+  function linked() {
+    let linked = "https://www.linkedin.com/in/shrivrat-mani-7b94a8274/"
+    window.open(linked,"_blank");
+  }
+
+  function x() {
+    let x = "https://twitter.com/ManiShrivrat"
+    window.open(x,"_blank");
+  }
+  
+</script>
+</body>
+</html>
